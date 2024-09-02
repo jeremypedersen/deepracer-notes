@@ -1,5 +1,6 @@
+- **Last Updated:** 2024-09-02
+
 # DeepRacer Journal/Model Bank
-**Latest Update: 2024-09-02**
 
 **Disclaimer:** At the time of writing, I am employed by Amazon as an SSA (Specialist Solutions Architect) in Beijing, China. *However, the notes, opinions, and thoughts on DeepRacer modeling shared here are my own, not those of my employer.* In cases where I borrow ideas or methods from other people, I try to make that clear with appropriate references.
 
