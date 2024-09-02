@@ -1,5 +1,5 @@
 # DeepRacer Journal/Model Bank
-**Latest Update: 2022-11-29**
+**Latest Update: 2024-09-02**
 
 **Disclaimer:** At the time of writing, I am employed by Amazon as an SSA (Specialist Solutions Architect) in Beijing, China. *However, the notes, opinions, and thoughts on DeepRacer modeling shared here are my own, not those of my employer.* In cases where I borrow ideas or methods from other people, I try to make that clear with appropriate references.
 
@@ -58,17 +58,4 @@ reward += speed / 3.0
 I was expecting good results, so I was surprised when the models performed badly. Instead of speeding around the track, the models were flying off it! Perhaps the reward for speed was overwhelming the other rewards for staying on the track and/or staying near the center.
 
 I ended up throwing these models away to go back to the drawing board.
-
-## 3. Answering Some Burning Questions
-
-Since all the reward functions seemed to get better at navigating the track as I trained them more, I started to wonder: **would any reward function work?** What about a constant reward of 1? or -1? What if I just fed the model a 0? What if I set the discount factor (a measure of how important future rewards are) to 0? I ran a few tests to try and tease out what would happen.
-
-My previous experience told me that simpler models need more time to train, so I gave each of the models below a full 4 hours of training time. 
-
-| Model | Purpose |
-|-------|---------|
-| Good dog | Constant reward of 1, regardless of what the car does |
-| Bad dog | Constant reward of -1, regardless of what the car does |
-| Existentialist dog | No reward of any kind, regardless of what the car does |
-| In the moment | Default centerline following model, but with discount factor set to 0 |
 
